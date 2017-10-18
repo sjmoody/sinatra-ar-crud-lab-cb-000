@@ -1,0 +1,10 @@
+<!-- Should contain a form to update a specific blog post
+and POSTS to a controller action, patch '/posts/:id' -->
+<h1>Hello Patch</h1>
+
+<form method="POST" action="/posts/<%=@post.id %>">
+  <p>Name of post:<input type="text" name="name" value="<%= @post.name %>" /></p>
+  <p>Content of post:<input type="text" name="content" value="<%= @post.content %>"/></p>
+  <input id="hidden" type="hidden" name="_method" value="patch">
+<button type="submit" id="submit">Submit</button>
+</form>

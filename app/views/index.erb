@@ -1,0 +1,8 @@
+
+<h1> Index page should display all posts</h1>
+
+
+<p><% @posts.each do |post| %>
+  <%= post.name%>
+  <%= post.content%>
+  <% end%>

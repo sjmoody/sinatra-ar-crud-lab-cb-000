@@ -1,0 +1,10 @@
+
+<h1> Show page should render one post </h1>
+<h2><%=@post.name%></h2>
+<p><%=@post.content%></p>
+
+
+<form method="POST" action="/posts/<%= @post.id %>/delete">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+<button type="submit" id="delete">Delete</button>
+</form>
